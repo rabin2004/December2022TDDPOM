@@ -8,20 +8,56 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Regression Suite</th></tr>
-<tr><td><a href="#t0">Release 1.0 Regression Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">394,504</td><td></td><td></td></tr>
+<tr><th colspan="8">Release 1.0 Suite</th></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">122,211</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Release 1.0 Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testPkg.HomePageTest</td><td><a href="#m0">homepageMenuLinkTest</a></td><td rowspan="2">1689988526420</td><td rowspan="2">26424</td></tr><tr class="failedeven"><td><a href="#m1">homepageMenuLinkTest</a></td></tr><tr class="failedodd"><td rowspan="2">testPkg.SearchFunctionalityTest</td><td><a href="#m2">negativeSearchFunctionalityDataDrivenTestHittingEnterKey</a></td><td rowspan="1">1689988680648</td><td rowspan="1">15084</td></tr><tr class="failedodd"><td><a href="#m3">positiveSearchFunctionalityDataDrivenTestClickSearchBtn</a></td><td rowspan="1">1689988756318</td><td rowspan="1">15096</td></tr><tr><th colspan="4">Release 1.0 Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testPkg.HomePageTest</td><td><a href="#m4">homepageMenuLinkTest</a></td><td rowspan="1">1689988597795</td><td rowspan="1">10991</td></tr><tr class="passedodd"><td rowspan="8">testPkg.SearchFunctionalityTest</td><td><a href="#m5">negativeSearchFunctionalityDataDrivenTestClickingSearchBtn</a></td><td rowspan="2">1689988624553</td><td rowspan="2">17291</td></tr><tr class="passedodd"><td><a href="#m6">negativeSearchFunctionalityDataDrivenTestClickingSearchBtn</a></td></tr><tr class="passedodd"><td><a href="#m7">negativeSearchFunctionalityDataDrivenTestHittingEnterKey</a></td><td rowspan="1">1689988712534</td><td rowspan="1">8116</td></tr><tr class="passedodd"><td><a href="#m8">positiveSearchFunctionalityDataDrivenTestClickSearchBtn</a></td><td rowspan="2">1689988785563</td><td rowspan="2">15320</td></tr><tr class="passedodd"><td><a href="#m9">positiveSearchFunctionalityDataDrivenTestClickSearchBtn</a></td></tr><tr class="passedodd"><td><a href="#m10">positiveSearchFunctionalityDataDrivenTestHittingEnterKey</a></td><td rowspan="3">1689988813524</td><td rowspan="3">9607</td></tr><tr class="passedodd"><td><a href="#m11">positiveSearchFunctionalityDataDrivenTestHittingEnterKey</a></td></tr><tr class="passedodd"><td><a href="#m12">positiveSearchFunctionalityDataDrivenTestHittingEnterKey</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Release 1.0 Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testPkg.HomePageTest</td><td><a href="#m0">closeApp</a></td><td rowspan="1">1690591978223</td><td rowspan="1">25197</td></tr><tr><th colspan="4">Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testPkg.HomePageTest</td><td><a href="#m1">homepageMenuLinkTestFromXMLparameter</a></td><td rowspan="1">1690591925534</td><td rowspan="1">52410</td></tr></tbody>
 </table>
-<h2>Release 1.0 Regression Test</h2><h3 id="m0">testPkg.HomePageTest#homepageMenuLinkTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Clinic</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Clinic&quot;}
-  (Session info: chrome=114.0.5735.248)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<h2>Regression Test</h2><h3 id="m0">testPkg.HomePageTest#closeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c2e9d6def9e4f6f021c0996b1f860769, findElement {using=link text, value=Clinic}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2e9d6def9e4f6f021c0996b1f860769
+Command: [a125d8fcc6a92de86e22382905ec4159, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59766/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a125d8fcc6a92de86e22382905ec4159
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:341)
+	at basePkg.BaseClass.tearDown(BaseClass.java:58)
+	at testPkg.HomePageTest.closeApp(HomePageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
+	... 40 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testPkg.HomePageTest#homepageMenuLinkTestFromXMLparameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Music</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=115.0.5790.110)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a125d8fcc6a92de86e22382905ec4159, clickElement {id=6F00920AA940EDDB152D5326FA5BB5AC_element_91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59766/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a125d8fcc6a92de86e22382905ec4159)] -&gt; link text: Music]
+Session ID: a125d8fcc6a92de86e22382905ec4159
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -29,100 +65,11 @@ Session ID: c2e9d6def9e4f6f021c0996b1f860769
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 	at pageFactory.HomePage.clickHomePageMenuLink(HomePage.java:33)
-	at testPkg.HomePageTest.homepageMenuLinkTest(HomePageTest.java:27)
+	at testPkg.HomePageTest.homepageMenuLinkTestFromXMLparameter(HomePageTest.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testPkg.HomePageTest#homepageMenuLinkTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Music</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Music&quot;}
-  (Session info: chrome=114.0.5735.248)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7f634227806ef1dd32d8104d6cab1085, findElement {using=link text, value=Music}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56213}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56213/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f634227806ef1dd32d8104d6cab1085
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at pageFactory.HomePage.clickHomePageMenuLink(HomePage.java:33)
-	at testPkg.HomePageTest.homepageMenuLinkTest(HomePageTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testPkg.SearchFunctionalityTest#negativeSearchFunctionalityDataDrivenTestHittingEnterKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>*^(*^*(^*@^*@(*89898342230957329523890</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
-  (Session info: chrome=114.0.5735.248)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f7e475292475d9e187f6469905dee7a9, findElement {using=id, value=twotabsearchtextbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56695/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f7e475292475d9e187f6469905dee7a9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-	at pageFactory.HomePage.enterProductInSearchTxtBox(HomePage.java:25)
-	at testPkg.SearchFunctionalityTest.negativeSearchFunctionalityDataDrivenTestHittingEnterKey(SearchFunctionalityTest.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestClickSearchBtn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>samsung</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
-  (Session info: chrome=114.0.5735.248)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de3873b455e9d2a732148ea3b38f2613, findElement {using=id, value=twotabsearchtextbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57036/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de3873b455e9d2a732148ea3b38f2613
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-	at pageFactory.HomePage.enterProductInSearchTxtBox(HomePage.java:25)
-	at testPkg.SearchFunctionalityTest.positiveSearchFunctionalityDataDrivenTestClickSearchBtn(SearchFunctionalityTest.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testPkg.HomePageTest#homepageMenuLinkTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Books</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testPkg.SearchFunctionalityTest#negativeSearchFunctionalityDataDrivenTestClickingSearchBtn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>*^(*^*(^*@^*@(*89898342230957329523890</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testPkg.SearchFunctionalityTest#negativeSearchFunctionalityDataDrivenTestClickingSearchBtn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>*^(*^*(^*@^*@(*89898342230957329523891</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testPkg.SearchFunctionalityTest#negativeSearchFunctionalityDataDrivenTestHittingEnterKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>*^(*^*(^*@^*@(*89898342230957329523891</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestClickSearchBtn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pixel</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestClickSearchBtn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>apple</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestHittingEnterKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>apple</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestHittingEnterKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pixel</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">testPkg.SearchFunctionalityTest#positiveSearchFunctionalityDataDrivenTestHittingEnterKey</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>samsung</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

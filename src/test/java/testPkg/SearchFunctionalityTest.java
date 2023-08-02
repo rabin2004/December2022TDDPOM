@@ -16,7 +16,7 @@ public class SearchFunctionalityTest extends BaseClass{
 	CommonFunctionalities cf;
 	
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	  public void loadApp() {
 		initialization();
 		hp = new HomePage();
@@ -24,12 +24,13 @@ public class SearchFunctionalityTest extends BaseClass{
 		cf = new CommonFunctionalities();
 	  }
 
-	  @AfterMethod
+	  @AfterMethod(alwaysRun=true)
 	  public void closeApp() {
 		  tearDown();
 	  }
 	
-	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="positiveSearchData")
+	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="positiveSearchData",
+			groups="smoke_test")
   	public void positiveSearchFunctionalityDataDrivenTestHittingEnterKey(String product) {
 		hp.enterProductInSearchTxtBox(product);
 		cf.hittingEnterKey();
@@ -37,7 +38,8 @@ public class SearchFunctionalityTest extends BaseClass{
 				srp.returnExpectedSearchResultPageTitle(product));
 	}
 	
-	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="positiveSearchData")
+	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="positiveSearchData",
+			groups={"smoke_test","regression_test"})
   	public void positiveSearchFunctionalityDataDrivenTestClickSearchBtn(String product) {
 		hp.enterProductInSearchTxtBox(product);
 		hp.clickSearchButton();
@@ -46,14 +48,16 @@ public class SearchFunctionalityTest extends BaseClass{
 	}
 	
 	
-	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="negativeSearchData")
+	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="negativeSearchData",
+			groups={"smoke_test","integration_test"})
   	public void negativeSearchFunctionalityDataDrivenTestHittingEnterKey(String invalidProduct) {
 		hp.enterProductInSearchTxtBox(invalidProduct);
 		cf.hittingEnterKey();
 		Assert.assertTrue(srp.valdiateNoResultErrorMsgDisplay());
 	}
 	
-	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="negativeSearchData")
+	@Test (dataProviderClass=dataPkg.SearchFunctionalityData.class, dataProvider="negativeSearchData",
+			groups="E2E_test")
   	public void negativeSearchFunctionalityDataDrivenTestClickingSearchBtn(String invalidProduct) {
 		hp.enterProductInSearchTxtBox(invalidProduct);
 		hp.clickSearchButton();

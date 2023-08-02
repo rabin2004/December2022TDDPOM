@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Release 1.0 Suite">
+  <test thread-count="5" name="Regression Test">
+	  <parameter name="link" value="Music"/>
+    <classes>
+      <class name="testPkg.HomePageTest">
+		  <methods>
+			  <include name="homepageMenuLinkTestFromXMLparameter"/>
+		  </methods>
+	  </class>
+    </classes>
+  </test> <!-- Regression Test -->
+</suite> <!-- Release 1.0 Suite -->

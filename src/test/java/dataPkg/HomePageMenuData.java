@@ -6,9 +6,11 @@ public class HomePageMenuData {
 	
 	@DataProvider
 	public String[] homePageMenuLinks() {
-		String[] link = {	"Clinic",
-							"Music",
-							"Books"};
+		String[] link = {	"Clinic"
+//							,
+//							"Music",
+//							"Books"
+							};
 		return link;
 	}
 

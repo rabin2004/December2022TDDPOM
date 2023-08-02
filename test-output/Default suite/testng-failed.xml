@@ -5,9 +5,10 @@
     <classes>
       <class name="testPkg.HomePageTest">
         <methods>
-          <include name="closeApp"/>
           <include name="loadApp"/>
+          <include name="closeApp"/>
           <include name="homepageMenuLinkTest" invocation-numbers="0"/>
+          <include name="homepageMenuLinkTestFromXMLparameter"/>
         </methods>
       </class> <!-- testPkg.HomePageTest -->
     </classes>
